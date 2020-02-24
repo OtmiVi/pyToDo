@@ -2,8 +2,7 @@ import comfig
 
 while True:
     operation = input('operation: \n')
-    if operation == 'create':
-        task_name = input('enter task name: ')
-        comfig.create(task_name)
+    if operation == 'create' or operation == '+':
+        comfig.create()
     elif operation == 'exit':
         break
