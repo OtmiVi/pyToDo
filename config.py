@@ -1,6 +1,14 @@
 import os
 
 
+def overwrite():
+    task = input('enter name of overwrite task: ')
+    task = open('tasks/' + task + '.txt', 'w')
+    text = input('new text: ')
+    task.write(text)
+    task.close()
+
+
 def remove():
     task = input('enter name of remove task: ')
     os.remove('tasks/' + task + '.txt')

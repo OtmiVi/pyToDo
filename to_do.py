@@ -6,5 +6,7 @@ while True:
         config.create()
     elif operation == 'remove' or operation == '-':
         config.remove()
+    elif operation == 'overwrite' or operation == "=":
+        config.overwrite()
     elif operation == 'exit':
         break
