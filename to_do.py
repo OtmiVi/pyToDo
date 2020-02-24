@@ -1,8 +1,10 @@
-import comfig
+import config
 
 while True:
     operation = input('operation: \n')
     if operation == 'create' or operation == '+':
-        comfig.create()
+        config.create()
+    elif operation == 'remove' or operation == '-':
+        config.remove()
     elif operation == 'exit':
         break
