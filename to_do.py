@@ -8,5 +8,7 @@ while True:
         config.remove()
     elif operation == 'overwrite' or operation == "=":
         config.overwrite()
+    elif operation == 'all':
+        config.show_all()
     elif operation == 'exit':
         break

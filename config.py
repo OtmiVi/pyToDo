@@ -1,5 +1,9 @@
 import os
 
+def show_all():
+    for i in os.listdir('tasks'):
+        print(i)
+
 
 def overwrite():
     task = input('enter name of overwrite task: ')
